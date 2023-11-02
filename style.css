@@ -12,4 +12,18 @@ body {
   font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
   background-color: #121212;
+  color: white;
+  font-weight: 500;
 }
+
+/* .third-bottom-left > div:nth-of-type(2) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.third-bottom-left img {
+  width: 50px;
+}
+ */
