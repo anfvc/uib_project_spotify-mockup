@@ -6,19 +6,20 @@
 
 :root {
   font-size: 62.5%;
+  --p-color: rgb(178, 178, 178);
 }
 
 body {
   font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
-  background-color: #121212;
+  background-color: #101010;
   color: white;
   font-weight: 500;
 }
 
 .general-container {
   margin: 2rem auto;
-  width: 99%;
+  width: 50%;
   display: grid;
   grid-template-areas: "left center center right"
                        "1st center center right"
@@ -48,6 +49,12 @@ body {
   gap: 1.5rem;
   padding: 0.5rem;
   cursor: pointer;
+  color: var(--p-color);
+  font-weight: bold;
+}
+
+.upper-left > div:first-child:hover, .upper-left > div:last-child:hover {
+  color: white;
 }
 
 /* ? YOUR LIBRARY TOP */
@@ -75,6 +82,26 @@ body {
   justify-content: center;
   gap: 2rem;
   font-size: 2rem;
+}
+
+.library-down > div {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.library-down > div p {
+  font-size: 1.2rem;
+  background-color: #3a3a3a;
+  border-radius: 30px;
+  padding: 0.7rem 1rem;
+}
+
+.library-down > div p:hover {
+  background-color: #4f4f4f;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
 }
 
 
