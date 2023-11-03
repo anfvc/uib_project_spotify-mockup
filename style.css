@@ -23,16 +23,66 @@ body {
   grid-template-areas: "left center center right"
                        "1st center center right"
                        "2nd center center right"
-                       "3rd center center right"
+                       "3rd center center right";
+  gap: 1rem;
 }
+
+.general-container > * {
+  background-color: #242424;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+}
+
+/* ? HOME & SEARCH */
 
 .upper-left {
   grid-area: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
 }
+
+.upper-left > div:first-child, .upper-left > div:last-child {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+/* ? YOUR LIBRARY TOP */
 
 .first-bottom-left {
   grid-area: 1st;
 }
+
+.library-left > div:first-of-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+.library-left > div:first-of-type > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-weight: bold;
+}
+
+.library-left > div:first-of-type > div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+
+
+
+
+
+
 
 .second-bottom-left {
   grid-area: 2nd;
@@ -45,6 +95,53 @@ body {
 .center {
   grid-area: center;
 }
+
+.center > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons-center-top > div:first-child {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.icons-center-top > div:first-child span {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-center-top > div:first-child span > i {
+  position: absolute;
+}
+
+.icons-center-top > div:last-child {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.icons-center-top > div:last-child span {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-center-top > div:last-child span > i {
+  position: absolute;
+}
+
 
 .upper-right {
   grid-area: right;
@@ -61,3 +158,9 @@ body {
   width: 50px;
 }
  */
+
+
+footer .foot-container {
+  display: flex;
+  justify-content: space-between;
+ }

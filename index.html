@@ -14,18 +14,30 @@
 <body>
   <div class="general-container">
     <div class="upper-left"> <!-- ? For home & Search --> <!-- COLOR IS #242424 -->
-      <i class="fa-solid fa-house"></i><p>Home</p>
-      <i class="fa-solid fa-magnifying-glass"></i><p>Search</p>
-    </div>
+      <div>
+        <i class="fa-solid fa-house"></i>
+        <p>Home</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <p>Search</p></div>
+      </div>
 
+      <!-- --------------------------------------- -->
     <div class="first-bottom-left"> <!-- ? THIS IS A NAVBAR LIKE BOX -->
-      <div>
-        <i class="fa-solid fa-folder"></i><p>Your Library</p>
-      </div>
-      <div>
-        <i class="fa-solid fa-plus"></i>
-        <i class="fa-solid fa-arrow-right"></i>
-      </div>
+      <div class="library-left">
+          <div>
+            <div>
+              <i class="fa-solid fa-folder"></i>
+              <p>Your Library</p>
+            </div>
+            <div class="library-right">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
       <div>
         <p>Playlists</p>
         <p>Podcasts & Shows</p>
@@ -33,6 +45,7 @@
         <p>Artists</p>
       </div>
     </div>
+    <!-- ------------------------------------------ -->
     <div class="second-bottom-left"> <!-- ? FOR MAGNIFYING GLASS AND RECENTS -->
       <div>
         <i class="fa-solid fa-magnifying-glass"></i>
@@ -257,15 +270,16 @@
     </div>
 
     <div class="center"><!-- ? BOX IN THE MIDDLE -->
-      <div class="icons-center-left">
-        <i class="fa-solid fa-chevron-left"></i>
-        <i class="fa-solid fa-chevron-right"></i>
-      </div>
-
-      <div class="icons-center-right">
-        <i class="fa-solid fa-bell"></i>
-        <i class="fa-solid fa-user-group"></i>
-        <i class="fa-solid fa-user"></i>
+      <div class="icons-center-top">
+        <div>
+          <span><i class="fa-solid fa-chevron-left"></i></span>
+          <span><i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+        <div>
+          <span><i class="fa-regular fa-bell"></i></span>
+          <span><i class="fa-solid fa-user-group"></i></span>
+          <span><i class="fa-regular fa-user"></i></span>
+        </div>
       </div>
 
       <div class="good-evening"> <!-- ? TOP PART OF UPPER SECTION -->
@@ -430,16 +444,16 @@
           <span>progress bar</span>
           <span>Time</span>
         </div>
-        <div>
-          <i class="fa-solid fa-play"></i>
-          <i class="fa-solid fa-microphone-lines"></i>
-          <i class="fa-solid fa-music"></i>
-          <i class="fa-solid fa-bars-staggered"></i>
-          <i class="fa-solid fa-radio"></i>
-          <i class="fa-solid fa-volume-low"></i>
-          <span>volume</span>
-          <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-        </div>
+      </div>
+      <div>
+        <i class="fa-solid fa-play"></i>
+        <i class="fa-solid fa-microphone-lines"></i>
+        <i class="fa-solid fa-music"></i>
+        <i class="fa-solid fa-bars-staggered"></i>
+        <i class="fa-solid fa-radio"></i>
+        <i class="fa-solid fa-volume-low"></i>
+        <span>volume</span>
+        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
       </div>
     </div>
   </footer>
