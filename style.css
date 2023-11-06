@@ -144,15 +144,66 @@ h1, h2, h3, h4 {
   align-items: center;
 }
 
+
+
+.third-bottom-left::-webkit-scrollbar {
+  width: 15px;
+}
+
+.third-bottom-left::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.third-bottom-left::-webkit-scrollbar-thumb {
+  background-color: #88888800;
+  cursor: pointer;
+
+}
+
+.third-bottom-left:hover::-webkit-scrollbar-thumb {
+  background-color: #8888889c;
+  transition: all 5s ease-in-out;
+}
+
+.third-bottom-left:hover::-webkit-scrollbar-thumb:hover {
+  background-color: #a4a4a49c;
+  transition: all 5s ease-in-out;
+}
+
 .center {
   grid-area: center;
   overflow-y: scroll;
 }
 
+
 .center > div:first-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.center::-webkit-scrollbar {
+  width: 15px;
+}
+
+.center::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.center::-webkit-scrollbar-thumb {
+  background-color: #88888800;
+  cursor: pointer;
+
+}
+
+.center:hover::-webkit-scrollbar-thumb {
+  background-color: #8888889c;
+  transition: all 5s ease-in-out;
+}
+
+.center:hover::-webkit-scrollbar-thumb:hover {
+  background-color: #a4a4a49c;
+  transition: all 5s ease-in-out;
 }
 
 .icons-center-top > div:first-child {
@@ -201,13 +252,6 @@ h1, h2, h3, h4 {
 }
 
 
-/* .third-bottom-left img {
-  width: 50px;
-}
-*/
-
-
-
 footer {
   grid-area: foot;
   background-color: #000;
@@ -226,6 +270,10 @@ footer .foot-container > div:first-child {
   display: flex;
   gap: 1.8rem;
   align-items: center;
+}
+
+footer .foot-container > div:first-child img {
+  border-radius: 3px;
 }
 
 footer .foot-container > div:first-child > div:nth-child(3) > i:hover {
