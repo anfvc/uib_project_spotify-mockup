@@ -39,7 +39,7 @@ h1, h2, h3, h4 {
 
 .general-container > *:not(footer) {
   background-color: #1a1a1a;
-  padding: 1rem 1.5rem;
+  padding: 1rem 0.5rem;
   border-radius: 10px;
 }
 
@@ -51,21 +51,21 @@ h1, h2, h3, h4 {
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
 .upper-left > div:first-child, .upper-left > div:last-child {
   display: flex;
   gap: 1.5rem;
-  padding: 0.5rem;
-  cursor: pointer;
+  padding: 1rem 2rem;
   color: var(--p-color);
   font-weight: bold;
 }
 
-.upper-left > div:first-child:hover, .upper-left > div:last-child:hover {
+.upper-left > div:first-child p:hover, .upper-left > div:last-child p:hover {
   color: white;
-  transition: all 0.3s ease-in
+  transition: all 0.3s ease-in;
+  cursor: pointer;
 }
 
 /* ? YOUR LIBRARY TOP */
@@ -77,6 +77,7 @@ h1, h2, h3, h4 {
 .library-left > div:first-of-type {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .library-left > div:first-of-type > div {
@@ -89,6 +90,7 @@ h1, h2, h3, h4 {
   align-items: center;
   gap: 1.5rem;
   font-weight: bold;
+  padding: 0 1rem;
 }
 
 .library-left > div:first-of-type > div:last-child {
@@ -97,11 +99,11 @@ h1, h2, h3, h4 {
   justify-content: center;
   gap: 2rem;
   font-size: 2rem;
+  padding: 0 1rem;
 }
 
 .library-down > div {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin: 2rem 1.5rem 1rem;
   display: flex;
   gap: 1rem;
 }
@@ -125,7 +127,7 @@ h1, h2, h3, h4 {
   grid-area: 2nd;
   display: flex;
   justify-content: space-between;
-  margin: 1rem 0;
+  margin: 1rem 0 0 1.5rem;
 }
 
 
@@ -144,13 +146,14 @@ h1, h2, h3, h4 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 0.5rem 0;
+  padding: 0.5rem 1.5rem;
 }
 
 
 
 .third-bottom-left::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
+
 }
 
 .third-bottom-left::-webkit-scrollbar-track {
@@ -159,8 +162,6 @@ h1, h2, h3, h4 {
 
 .third-bottom-left::-webkit-scrollbar-thumb {
   background-color: #88888800;
-  cursor: pointer;
-
 }
 
 .third-bottom-left:hover::-webkit-scrollbar-thumb {
@@ -186,7 +187,7 @@ h1, h2, h3, h4 {
 }
 
 .center::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
 }
 
 .center::-webkit-scrollbar-track {
@@ -381,3 +382,5 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
   border-radius: 50%;
   right: 0;
 }
+
+
