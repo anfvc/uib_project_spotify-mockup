@@ -22,8 +22,6 @@ h1, h2, h3, h4 {
   color: white;
 }
 
-
-
 .general-container {
   margin: 1rem auto;
   width: 100%;
@@ -126,11 +124,14 @@ h1, h2, h3, h4 {
   grid-area: 2nd;
   display: flex;
   justify-content: space-between;
+  margin: 1rem 0;
 }
+
 
 .second-bottom-left > div:nth-child(2) > p::after {
   content: "\f03a";
   font: var(--fa-font-solid);
+  padding-left: 1rem;
 }
 
 .third-bottom-left {
@@ -142,6 +143,7 @@ h1, h2, h3, h4 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding: 0.5rem 0;
 }
 
 
@@ -266,6 +268,8 @@ footer .foot-container {
   align-items: center;
 }
 
+/* ? LEFT PART OF FOOTER (PLAYING SONG) */
+
 footer .foot-container > div:first-child {
   display: flex;
   gap: 1.8rem;
@@ -282,3 +286,62 @@ footer .foot-container > div:first-child > div:nth-child(3) > i:hover {
   transform: scale(1.1);
 }
 
+/* ? MIDDLE PART OF FOOTER (CONTROLS) */
+
+footer .foot-container > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+footer .foot-container > div:nth-child(2) > div:first-child {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  color: var(--p-color);
+  font-size: 2rem;
+}
+
+footer .foot-container > div:nth-child(2) > div:first-child > i:nth-of-type(3) {
+  font-size: 2.8rem;
+}
+
+footer .foot-container > div:nth-child(2) > div:first-child > i:nth-of-type(3):hover {
+  color: white;
+  transform: scale(1.1);
+  transition: all 0.1s ease-in-out;
+}
+
+/* ? RIGHT PART OF FOOTER (EXTRA TOOLS) */
+
+footer .foot-container > div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: var(--p-color);
+  font-size: 1.5rem;
+}
+
+footer .foot-container > div:nth-child(3) > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4rem;
+  position: relative;
+}
+
+
+
+footer .foot-container > div:nth-child(3) > div > span {
+  position: absolute;
+  display: inline-block;
+  width: 80px;
+  height: 4px;
+  background-color: rgba(103, 103, 103, 0.849);
+  border-radius: 10px;
+}
