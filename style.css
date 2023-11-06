@@ -127,7 +127,7 @@ h1, h2, h3, h4 {
   grid-area: 2nd;
   display: flex;
   justify-content: space-between;
-  margin: 1rem 0 0 1.5rem;
+  margin: 1rem 0 1.5rem 1.5rem;
 }
 
 
