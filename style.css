@@ -12,24 +12,34 @@
 body {
   font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
-  background-color: #101010;
-  color: white;
+  background-color: #000;
+  color: var(--p-color);
   font-weight: 500;
+  height: 99vh;
 }
+
+h1, h2, h3, h4 {
+  color: white;
+}
+
+
 
 .general-container {
-  margin: 2rem auto;
-  width: 50%;
+  margin: 1rem auto;
+  width: 100%;
+  max-height: 100%;
   display: grid;
-  grid-template-areas: "left center center right"
-                       "1st center center right"
-                       "2nd center center right"
-                       "3rd center center right";
-  gap: 1rem;
+  grid-template-rows: 108px 99px auto 7%;
+  grid-template-columns: auto;
+  grid-template-areas:"left center center right"
+                      "1st center center right"
+                      "3rd center center right"
+                      "foot foot  foot  foot";
+  gap: 0.9rem;
 }
 
-.general-container > * {
-  background-color: #242424;
+.general-container > *:not(footer) {
+  background-color: #1a1a1a;
   padding: 1rem 1.5rem;
   border-radius: 10px;
 }
@@ -40,6 +50,7 @@ body {
   grid-area: left;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1rem;
   padding: 2rem;
 }
@@ -55,6 +66,7 @@ body {
 
 .upper-left > div:first-child:hover, .upper-left > div:last-child:hover {
   color: white;
+  transition: all 0.3s ease-in
 }
 
 /* ? YOUR LIBRARY TOP */
@@ -66,6 +78,10 @@ body {
 .library-left > div:first-of-type {
   display: flex;
   justify-content: space-between;
+}
+
+.library-left > div:first-of-type > div {
+  cursor: pointer;
 }
 
 .library-left > div:first-of-type > div:first-child {
@@ -94,33 +110,43 @@ body {
 .library-down > div p {
   font-size: 1.2rem;
   background-color: #3a3a3a;
+  color: white;
   border-radius: 30px;
   padding: 0.7rem 1rem;
 }
 
 .library-down > div p:hover {
   background-color: #4f4f4f;
+
   cursor: pointer;
   transition: all 0.3s ease-in;
 }
 
-
-
-
-
-
-
-
 .second-bottom-left {
   grid-area: 2nd;
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-bottom-left > div:nth-child(2) > p::after {
+  content: "\f03a";
+  font: var(--fa-font-solid);
 }
 
 .third-bottom-left {
   grid-area: 3rd;
+  overflow-y: scroll;
+}
+
+.third-bottom-left > .albumc {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .center {
   grid-area: center;
+  overflow-y: scroll;
 }
 
 .center > div:first-child {
@@ -174,20 +200,37 @@ body {
   grid-area: right;
 }
 
-/* .third-bottom-left > div:nth-of-type(2) {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-
-} */
 
 /* .third-bottom-left img {
   width: 50px;
 }
- */
+*/
 
+
+
+footer {
+  grid-area: foot;
+  background-color: #000;
+  border: 1px solid white;
+}
 
 footer .foot-container {
+  padding: 0 1.5rem;
+  height: 100%;
   display: flex;
   justify-content: space-between;
- }
+  align-items: center;
+}
+
+footer .foot-container > div:first-child {
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+footer .foot-container > div:first-child > div:nth-child(3) > i:hover {
+  color: white;
+  text-shadow: 0 0 2px white;
+  transform: scale(1.1);
+}
+
