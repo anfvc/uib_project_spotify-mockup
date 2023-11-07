@@ -178,11 +178,12 @@ h1, h2, h3, h4 {
   background-color: #a4a4a49c;
 }
 
+/* ? CENTER SECTION */
+
 .center {
   grid-area: center;
   overflow-y: scroll;
 }
-
 
 .center > div:first-child {
   display: flex;
@@ -201,7 +202,6 @@ h1, h2, h3, h4 {
 .center::-webkit-scrollbar-thumb {
   background-color: #88888800;
   cursor: pointer;
-
 }
 
 .center:hover::-webkit-scrollbar-thumb {
@@ -254,6 +254,87 @@ h1, h2, h3, h4 {
   position: absolute;
 }
 
+.grid-evening {
+  margin: 0 auto;
+  width: 95%;
+  display: grid;
+  grid-template-areas: "sleep chill rock"
+                       "pop hip jazz";
+  gap: 1.7rem;
+
+}
+
+.grid-evening > * {
+  background-color: #3a3a3a;
+}
+
+#sleep {
+  grid-area: sleep;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+#sleep > img {
+  border-radius: 5px 0 0 5px;
+}
+
+#chill {
+  grid-area: chill;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+#chill > img {
+  border-radius: 5px 0 0 5px;
+}
+
+#rock {
+  grid-area: rock;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+#rock > img {
+  border-radius: 5px 0 0 5px;
+}
+
+#pop {
+  grid-area: pop;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+#pop > img {
+  border-radius: 5px 0 0 5px;
+}
+
+#hip {
+  grid-area: hip;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+#hip > img {
+  border-radius: 5px 0 0 5px;
+}
+
+#jazz {
+  grid-area: jazz;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+#jazz > img {
+  border-radius: 5px 0 0 5px;
+}
+
+/* ? RIGHT SECTION */
 
 .upper-right {
   grid-area: right;
