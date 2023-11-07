@@ -29,7 +29,7 @@ h1, h2, h3, h4 {
   max-height: 100%;
   display: grid;
   grid-template-rows: 108px 99px auto 7%;
-  grid-template-columns: 15% auto auto 15%;
+  grid-template-columns: 20% auto auto 20%;
   grid-template-areas:"left center center right"
                       "1st center center right"
                       "3rd center center right"
@@ -282,6 +282,7 @@ h1, h2, h3, h4 {
 }
 
 .grid-evening {
+  margin: 2rem 0 2rem 1rem;
   width: 90%;
   display: grid;
   grid-template-areas: "sleep chill rock"
@@ -343,7 +344,6 @@ h1, h2, h3, h4 {
   position: absolute;
   color: black;
   font-size: 20px;
-
 }
 
 #chill {
@@ -390,7 +390,6 @@ h1, h2, h3, h4 {
   position: absolute;
   color: black;
   font-size: 20px;
-
 }
 
 #rock {
@@ -576,6 +575,52 @@ h1, h2, h3, h4 {
   color: black;
   font-size: 20px;
 }
+
+
+/* ? MADE FOR YOU SECTION */
+
+.made {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.for-u {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  gap: 1rem;
+}
+
+.for-u > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 0.5rem;
+  background-color: #232323;
+  gap: 1rem;
+  border-radius: 5px;
+  padding: 1.5rem;
+
+}
+
+.for-u > div > img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.for-u > div > div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
 
 /* ? RIGHT SECTION */
 
