@@ -151,15 +151,18 @@ h1, h2, h3, h4 {
   font-size: 1.4rem;
 }
 
+.third-bottom-left > .albumc:hover {
+  background-color: #232323;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
 .third-bottom-left .albumc > div img {
   border-radius: 5px;
 }
 
-
-
 .third-bottom-left::-webkit-scrollbar {
   width: 10px;
-
 }
 
 .third-bottom-left::-webkit-scrollbar-track {
@@ -260,11 +263,10 @@ h1, h2, h3, h4 {
   grid-template-areas: "sleep chill rock"
                        "pop hip jazz";
   gap: 1.7rem;
-
 }
 
 .grid-evening > * {
-  background-color: #3a3a3a;
+  background-color: #2a2a2a;
   cursor: pointer;
 }
 
@@ -284,6 +286,7 @@ h1, h2, h3, h4 {
 
 #sleep > img {
   border-radius: 5px 0 0 5px;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.516);
 }
 
 #sleep > div:nth-child(2) {
@@ -303,16 +306,21 @@ h1, h2, h3, h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
 }
 
-#sleep >div:nth-child(2) span > i {
+#sleep:hover > div:nth-child(2) > span {
+  box-shadow: 0 0 0 black, -2px 7px 8px rgba(0, 0, 0, 0.338);
+  transition: all 0.4s ease-in;
+  opacity: 1;
+}
+
+#sleep > div:nth-child(2) span > i {
   position: absolute;
   color: black;
   font-size: 20px;
-  text-shadow: 0 5px black, 0 -2px 5px black;
+
 }
-
-
 
 #chill {
   grid-area: chill;
@@ -325,6 +333,40 @@ h1, h2, h3, h4 {
 
 #chill > img {
   border-radius: 5px 0 0 5px;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.516);
+}
+
+#chill > div:nth-child(2) {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#chill > div:nth-child(2) > span {
+  background-color: #1ed760;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+#chill:hover > div:nth-child(2) > span {
+  box-shadow: 0 0 0 black, -2px 7px 8px rgba(0, 0, 0, 0.338);
+  transition: all 0.4s ease-in;
+  opacity: 1;
+}
+
+#chill > div:nth-child(2) span > i {
+  position: absolute;
+  color: black;
+  font-size: 20px;
+
 }
 
 #rock {
@@ -338,6 +380,39 @@ h1, h2, h3, h4 {
 
 #rock > img {
   border-radius: 5px 0 0 5px;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.516);
+}
+
+#rock > div:nth-child(2) {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#rock > div:nth-child(2) > span {
+  background-color: #1ed760;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+#rock:hover > div:nth-child(2) > span {
+  box-shadow: 0 0 0 black, -2px 7px 8px rgba(0, 0, 0, 0.338);
+  transition: all 0.4s ease-in;
+  opacity: 1;
+}
+
+#rock > div:nth-child(2) span > i {
+  position: absolute;
+  color: black;
+  font-size: 20px;
 }
 
 #pop {
@@ -351,6 +426,39 @@ h1, h2, h3, h4 {
 
 #pop > img {
   border-radius: 5px 0 0 5px;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.516);
+}
+
+#pop > div:nth-child(2) {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#pop > div:nth-child(2) > span {
+  background-color: #1ed760;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+#pop:hover > div:nth-child(2) > span {
+  box-shadow: 0 0 0 black, -2px 7px 8px rgba(0, 0, 0, 0.338);
+  transition: all 0.4s ease-in;
+  opacity: 1;
+}
+
+#pop > div:nth-child(2) span > i {
+  position: absolute;
+  color: black;
+  font-size: 20px;
 }
 
 #hip {
@@ -364,6 +472,39 @@ h1, h2, h3, h4 {
 
 #hip > img {
   border-radius: 5px 0 0 5px;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.516);
+}
+
+#hip > div:nth-child(2) {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#hip > div:nth-child(2) > span {
+  background-color: #1ed760;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+#hip:hover > div:nth-child(2) > span {
+  box-shadow: 0 0 0 black, -2px 7px 8px rgba(0, 0, 0, 0.338);
+  transition: all 0.4s ease-in;
+
+}
+
+#hip > div:nth-child(2) span > i {
+  position: absolute;
+  color: black;
+  font-size: 20px;
 }
 
 #jazz {
@@ -377,6 +518,7 @@ h1, h2, h3, h4 {
 
 #jazz > img {
   border-radius: 5px 0 0 5px;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.516);
 }
 
 /* ? RIGHT SECTION */
