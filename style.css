@@ -29,7 +29,7 @@ h1, h2, h3, h4 {
   max-height: 100%;
   display: grid;
   grid-template-rows: 108px 99px auto 7%;
-  grid-template-columns: auto;
+  grid-template-columns: 20% auto auto 20%;
   grid-template-areas:"left center center right"
                       "1st center center right"
                       "3rd center center right"
@@ -147,6 +147,11 @@ h1, h2, h3, h4 {
   justify-content: flex-start;
   align-items: center;
   padding: 0.5rem 1.5rem;
+  gap: 1.5rem;
+}
+
+.third-bottom-left > .albumc > img {
+  border-radius: 5px;
 }
 
 
@@ -166,12 +171,10 @@ h1, h2, h3, h4 {
 
 .third-bottom-left:hover::-webkit-scrollbar-thumb {
   background-color: #8888889c;
-  transition: all 5s ease-in-out;
 }
 
 .third-bottom-left:hover::-webkit-scrollbar-thumb:hover {
   background-color: #a4a4a49c;
-  transition: all 5s ease-in-out;
 }
 
 .center {
@@ -278,8 +281,8 @@ footer .foot-container > div:first-child {
   align-items: center;
 }
 
-footer .foot-container > div:first-child img {
-  border-radius: 3px;
+footer .foot-container > div:first-child > img {
+  border-radius: 5px;
 }
 
 footer .foot-container > div:first-child > div:nth-child(3) > i:hover {
@@ -318,6 +321,11 @@ footer .foot-container > div:nth-child(2) > div:first-child > i:nth-of-type(3):h
   transition: all 0.1s ease-in-out;
 }
 
+.fa-shuffle {
+  color: #1ed760;
+}
+
+
 /* ? RIGHT PART OF FOOTER (EXTRA TOOLS) */
 
 footer .foot-container > div:nth-child(3) {
@@ -337,11 +345,15 @@ footer .foot-container > div:nth-child(3) > div {
   position: relative;
 }
 
-footer .foot-container > div:nth-child(3) > i {
+footer .foot-container > div:nth-child(3) > i:not(.fa-play) {
   color: var(--p-color);
 }
 
-footer .foot-container > div:nth-child(3) > i:hover {
+.fa-play {
+  color: #1ed760;
+}
+
+footer .foot-container > div:nth-child(3) > i:hover:not(.fa-play) {
   color: white;
   cursor: pointer;
 }
