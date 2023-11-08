@@ -28,7 +28,7 @@ h1, h2, h3, h4 {
   width: 100%;
   max-height: 100%;
   display: grid;
-  grid-template-rows: 108px 99px auto 7%;
+  grid-template-rows: 108px 99px auto 10%;
   grid-template-columns: 20% auto auto 20%;
   grid-template-areas:"left center center right"
                       "1st center center right"
@@ -152,6 +152,11 @@ h1, h2, h3, h4 {
   align-items: center;
   padding: 0.5rem 1.5rem;
   gap: 1.3rem;
+  font-size: 1.4rem;
+}
+
+.albumc h3 {
+  font-weight: 500;
   font-size: 1.4rem;
 }
 
@@ -337,7 +342,7 @@ h1, h2, h3, h4 {
 
 #sleep:hover > div:nth-child(2) > span {
   box-shadow: 0 0 0 black, -2px 7px 8px rgba(0, 0, 0, 0.338);
-  transition: all 0.4s ease-in;
+  transition: all 0.1s ease-in;
   opacity: 1;
 }
 
@@ -383,7 +388,7 @@ h1, h2, h3, h4 {
 
 #chill:hover > div:nth-child(2) > span {
   box-shadow: 0 0 0 black, -2px 7px 8px rgba(0, 0, 0, 0.338);
-  transition: all 0.4s ease-in;
+  transition: all 0.1s ease-in;
   opacity: 1;
 }
 
@@ -429,7 +434,7 @@ h1, h2, h3, h4 {
 
 #rock:hover > div:nth-child(2) > span {
   box-shadow: 0 0 0 black, -2px 7px 8px rgba(0, 0, 0, 0.338);
-  transition: all 0.4s ease-in;
+  transition: all 0.1s ease-in;
   opacity: 1;
 }
 
@@ -475,7 +480,7 @@ h1, h2, h3, h4 {
 
 #pop:hover > div:nth-child(2) > span {
   box-shadow: 0 0 0 black, -2px 7px 8px rgba(0, 0, 0, 0.338);
-  transition: all 0.4s ease-in;
+  transition: all 0.1s ease-in;
   opacity: 1;
 }
 
@@ -521,7 +526,7 @@ h1, h2, h3, h4 {
 
 #hip:hover > div:nth-child(2) > span {
   box-shadow: 0 0 0 black, -2px 7px 8px rgba(0, 0, 0, 0.338);
-  transition: all 0.4s ease-in;
+  transition: all 0.1s ease-in;
   opacity: 1;
 }
 
@@ -567,7 +572,7 @@ h1, h2, h3, h4 {
 
 #jazz:hover > div:nth-child(2) > span {
   box-shadow: 0 0 0 black, -2px 7px 8px rgba(0, 0, 0, 0.338);
-  transition: all 0.4s ease-in;
+  transition: all 0.1s ease-in;
   opacity: 1;
 }
 
@@ -624,6 +629,7 @@ h1, h2, h3, h4 {
   padding: 1rem;
   border-radius: 5px;
   min-width: 100%;
+  cursor: pointer;
 }
 
 .spotify-box:hover {
@@ -635,10 +641,49 @@ h1, h2, h3, h4 {
   border-radius: 5px;
 }
 
+.spotify-box > div:first-child { /* ! GREEN BUTTON PLAY */
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+}
+
+.spotify-box > div:first-child > span {
+  background-color: #1ed760;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 1.5rem 1.5rem 0;
+  position: absolute;
+  opacity: 0;
+}
+
+.spotify-box:hover > div:first-child > span {
+  opacity: 1;
+  box-shadow: 0 0 0 black, -2px 7px 8px rgba(0, 0, 0, 0.338);
+  transition: all 0.1s ease-in;
+
+}
+
+.spotify-box > div:first-child > span > i {
+  height: 100%;
+  color: black;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
 .info > h3, p {
   margin-top: 0.5rem;
   font-size: 1.2rem;
 }
+
+
 
 /* ? BASED ON YOUR RECENT LISTENING SECTION */
 
