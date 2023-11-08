@@ -799,6 +799,7 @@ h1 {
 }
 
 .about {
+  margin-top: 1.5rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -823,7 +824,7 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-  margin: 2rem 0 0 2rem;
+  margin: 2.5rem 0 0 2rem;
   color: white;
   font-size: 1.5rem;
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.722);
