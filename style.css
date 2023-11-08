@@ -802,16 +802,37 @@ h1 {
   width: 100%;
   display: flex;
   align-items: center;
+  padding-left: 1rem;
+  cursor: pointer;
 }
 
 .about > .imgwrapper {
   width: 100%;
-  padding-left: 1rem;
+  background-color: #242424;
+  border-radius: 8px 8px 8px 8px;
+  position: relative;
+
 }
 
 .about > .imgwrapper > img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
+}
+
+.about > .imgwrapper > p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 2rem 0 0 2rem;
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.722);
+  font-weight: bold;
+}
+
+.imgwrapper > .about-info {
+  width: 100%;
+  padding: 1.5rem;
 }
 
 /* ? FOOTER */
