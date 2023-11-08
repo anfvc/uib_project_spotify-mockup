@@ -38,7 +38,7 @@ h1, h2, h3, h4 {
 }
 
 .general-container > *:not(footer) {
-  background-color: #101010;
+  background-color: #121212;
   padding: 1rem 0.5rem;
   border-radius: 10px;
 }
@@ -584,7 +584,7 @@ h1, h2, h3, h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 4rem 0;
+  margin: 4rem 1rem;
 }
 
 .for-u {
@@ -592,8 +592,7 @@ h1, h2, h3, h4 {
   display: grid;
   margin: 2rem 1rem 2rem 1rem;
   grid-template-areas: "box1 box2 box3 box4 box5 box6";
-  gap: 1rem;
-  overflow-x: hidden;
+  gap: 1.5rem;
 }
 
 #box1 {
@@ -621,10 +620,14 @@ h1, h2, h3, h4 {
 }
 
 .spotify-box {
-  background-color: #232323;
+  background-color: #161616;
   padding: 1rem;
   border-radius: 5px;
   min-width: 100%;
+}
+
+.spotify-box:hover {
+  background-color: #242424;
 }
 
 .spotify-box img {
@@ -637,7 +640,22 @@ h1, h2, h3, h4 {
   font-size: 1.2rem;
 }
 
+/* ? BASED ON YOUR RECENT LISTENING SECTION */
 
+.based {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 1rem;
+}
+
+.based-on {
+  width: 90%;
+  display: grid;
+  margin: 2rem 1rem 2rem 1rem;
+  grid-template-areas: "box1 box2 box3 box4 box5 box6";
+  gap: 1.5rem;
+}
 
 /* ? RIGHT SECTION */
 
