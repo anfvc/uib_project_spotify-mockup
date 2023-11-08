@@ -38,7 +38,7 @@ h1, h2, h3, h4 {
 }
 
 .general-container > *:not(footer) {
-  background-color: #1a1a1a;
+  background-color: #101010;
   padding: 1rem 0.5rem;
   border-radius: 10px;
 }
@@ -56,6 +56,7 @@ h1, h2, h3, h4 {
 
 .upper-left > div:first-child, .upper-left > div:last-child {
   display: flex;
+  align-items: center;
   gap: 1.5rem;
   padding: 1rem 2rem;
   color: var(--p-color);
@@ -587,41 +588,55 @@ h1, h2, h3, h4 {
 }
 
 .for-u {
-  max-width: 85%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 0 0.5rem;
-  font-size: 1rem;
+  width: 90%;
+  display: grid;
+  margin: 2rem 1rem 2rem 1rem;
+  grid-template-areas: "box1 box2 box3 box4 box5 box6";
   gap: 1rem;
+  overflow-x: hidden;
 }
 
-.for-u > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin: 0 0.5rem;
+#box1 {
+  grid-area: box1;
+}
+
+#box2 {
+  grid-area: box2;
+}
+
+#box3 {
+  grid-area: box3;
+}
+
+#box4 {
+  grid-area: box4;
+}
+
+#box5 {
+  grid-area: box5;
+}
+
+#box6 {
+  grid-area: box6;
+}
+
+.spotify-box {
   background-color: #232323;
-  gap: 1rem;
+  padding: 1rem;
   border-radius: 5px;
-  padding: 1.5rem;
-  overflow: hidden;
-
+  min-width: 100%;
 }
 
-.for-u > div > img {
-  width: 100%;
+.spotify-box img {
+  max-width: 100%;
   border-radius: 5px;
 }
 
-.for-u > div > div {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
+.info > h3, p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
 }
+
 
 
 /* ? RIGHT SECTION */
