@@ -23,6 +23,10 @@ h1, h2, h3, h4 {
   color: white;
 }
 
+h2:hover {
+  text-decoration: underline;
+}
+
 .general-container {
   margin: 1rem auto;
   width: 100%;
@@ -285,6 +289,10 @@ h1, h2, h3, h4 {
 
 .icons-center-top > div:last-child span > i {
   position: absolute;
+}
+
+h1 {
+  margin: 1rem 1.5rem;
 }
 
 .grid-evening {
@@ -654,7 +662,7 @@ h1, h2, h3, h4 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin: 0 1.5rem 1.5rem 0;
+  margin: 0 1rem 0.8rem 0;
   position: absolute;
   opacity: 0;
 }
@@ -675,15 +683,10 @@ h1, h2, h3, h4 {
   justify-content: center;
 }
 
-
-
-
 .info > h3, p {
   margin-top: 0.5rem;
   font-size: 1.2rem;
 }
-
-
 
 /* ? BASED ON YOUR RECENT LISTENING SECTION */
 
@@ -705,9 +708,70 @@ h1, h2, h3, h4 {
 /* ? RIGHT SECTION */
 
 .upper-right {
+  overflow-y: scroll;
   grid-area: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.upper-right .top {
+  font-size: 1.4rem;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.upper-right h3:hover {
+  text-decoration: underline;
+}
+
+.upper-right i {
+  font-size: 1.5rem;
+}
+
+.song > div:first-child {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.song > div > img {
+  width: 95%;
+  border-radius: 8px;
+}
+
+.song-info {
+  width: 100%;
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.song-info div:first-child {
+  padding: 0 0.5rem;
+  text-align: start;
+}
+
+.song-info > div:nth-child(2) {
+  margin: 0 0.5rem;
+}
+
+.song-info > div:first-child p {
+  font-size: 1.6rem;
+}
+
+.song-info > div:nth-child(2) i {
+  margin: 0 0.3rem;
+  font-size: 2rem;
+}
+
+/* ? FOOTER */
 
 footer {
   grid-area: foot;
