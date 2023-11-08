@@ -715,6 +715,29 @@ h1 {
   align-items: center;
 }
 
+.upper-right::-webkit-scrollbar {
+  width: 10px;
+}
+
+.upper-right::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.upper-right::-webkit-scrollbar-thumb {
+  background-color: #88888800;
+  cursor: pointer;
+}
+
+.upper-right:hover::-webkit-scrollbar-thumb {
+  background-color: #8888889c;
+  transition: all 5s ease-in-out;
+}
+
+.upper-right:hover::-webkit-scrollbar-thumb:hover {
+  background-color: #a4a4a49c;
+  transition: all 5s ease-in-out;
+}
+
 .upper-right .top {
   font-size: 1.4rem;
   padding: 0 1rem;
@@ -730,18 +753,21 @@ h1 {
 
 .upper-right i {
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
-.song > div:first-child {
+
+.song > .imgcontainer {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 1rem 0;
+  padding-left: 1rem;
 }
 
-.song > div > img {
-  width: 95%;
+.song > .imgcontainer > img {
+  width: 100%;
   border-radius: 8px;
 }
 
@@ -751,24 +777,41 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 1rem;
 }
 
 .song-info div:first-child {
-  padding: 0 0.5rem;
   text-align: start;
-}
-
-.song-info > div:nth-child(2) {
-  margin: 0 0.5rem;
 }
 
 .song-info > div:first-child p {
   font-size: 1.6rem;
 }
 
+.song-info > div:nth-child(2) {
+  margin: 0 0.5rem;
+}
+
 .song-info > div:nth-child(2) i {
   margin: 0 0.3rem;
   font-size: 2rem;
+  cursor: pointer;
+}
+
+.about {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.about > .imgwrapper {
+  width: 100%;
+  padding-left: 1rem;
+}
+
+.about > .imgwrapper > img {
+  width: 100%;
+  border-radius: 8px;
 }
 
 /* ? FOOTER */
