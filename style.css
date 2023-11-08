@@ -103,22 +103,22 @@ h1, h2, h3, h4 {
 }
 
 .library-down > div {
-  margin: 2rem 1.5rem 1rem;
+  margin: 2rem 0.5rem 1rem;
   display: flex;
-  gap: 1rem;
+  justify-content: space-evenly;
+
 }
 
 .library-down > div p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   background-color: #3a3a3a;
   color: white;
   border-radius: 30px;
-  padding: 0.7rem 1rem;
+  padding: 0.5rem 0.8rem;
 }
 
 .library-down > div p:hover {
   background-color: #4f4f4f;
-
   cursor: pointer;
   transition: all 0.3s ease-in;
 }
@@ -587,6 +587,7 @@ h1, h2, h3, h4 {
 }
 
 .for-u {
+  max-width: 85%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -606,6 +607,7 @@ h1, h2, h3, h4 {
   gap: 1rem;
   border-radius: 5px;
   padding: 1.5rem;
+  overflow: hidden;
 
 }
 
