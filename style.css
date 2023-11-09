@@ -33,7 +33,7 @@ h2:hover {
   max-height: 100%;
   display: grid;
   grid-template-rows: 108px 99px auto 10%;
-  grid-template-columns: auto auto auto 15%;
+  grid-template-columns: auto auto auto minmax(250px, 15%);
   grid-template-areas:"left center center right"
                       "1st center center right"
                       "3rd center center right"
@@ -321,7 +321,7 @@ h1 {
 }
 
 .grid-evening {
-  margin: 2rem 0 2rem 1rem;
+  margin: 2rem 1rem 2rem 1rem;
   width: 90%;
   display: grid;
   grid-template-areas: "sleep chill rock"
@@ -695,7 +695,7 @@ h1 {
 }
 
 .spotify-box img {
-  max-width: 100%;
+  min-width: 100%;
   border-radius: 5px;
 }
 
@@ -736,11 +736,9 @@ h1 {
   justify-content: center;
 }
 
-.info {
-  width: 100%;
-}
 
 .info > h3, p {
+  max-width: 100%;
   margin-top: 0.5rem;
   font-size: 1.2rem;
   text-align: start;
@@ -959,12 +957,13 @@ h1 {
 
 .tour {
   background-color: #242424;
-  width: 100%;
+  max-width: 100%;
   border-radius: 8px;
   padding: 1.5rem;
 }
 
 .tour img {
+  min-width: 100%;
   border-radius: 10px;
 }
 
@@ -994,6 +993,7 @@ h1 {
 
 .tour > div:nth-child(2) > div:nth-child(2) {
   padding: 1rem;
+  max-width: 100%;
 }
 
 .tour > div:nth-child(2):hover {
@@ -1193,4 +1193,65 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
   right: 0;
 }
 
+
+
+
+
+
+
+/* MEDIA */
+
+@media (max-width: 1400px) {
+  .grid-evening {
+    width: 100%;
+    grid-template-areas: "sleep chill"
+                         "rock pop"
+                         "hip jazz";
+
+    margin: 2rem 0.5rem 2rem 0.5rem;
+  }
+
+  .for-u, .based-on {
+    width: 100%;
+    grid-template-areas: "box1 box2"
+                         "box3 box4"
+                         "box5 box6";
+    gap: 1rem;
+  }
+}
+
+
+@media (max-width: 1000px) {
+
+  .general-container > *:not(footer) {
+    padding: 1rem 0rem;
+  }
+
+  h1, h2 {
+    font-size: 2rem;
+  }
+
+  .grid-evening {
+    grid-template-areas: "sleep"
+                         "chill"
+                         "rock"
+                         "pop"
+                         "hip"
+                         "jazz";
+
+    width: 100%;
+  }
+
+
+  .for-u, .based-on {
+    grid-template-areas: "box1"
+                         "box2"
+                         "box3"
+                         "box4"
+                         "box5"
+                         "box6";
+  }
+}
+
+@media (max-width: 900px)
 
