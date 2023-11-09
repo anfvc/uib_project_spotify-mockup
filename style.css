@@ -33,7 +33,7 @@ h2:hover {
   max-height: 100%;
   display: grid;
   grid-template-rows: 108px 99px auto 10%;
-  grid-template-columns: 20% auto auto 20%;
+  grid-template-columns: auto auto auto 15%;
   grid-template-areas:"left center center right"
                       "1st center center right"
                       "3rd center center right"
@@ -736,9 +736,14 @@ h1 {
   justify-content: center;
 }
 
+.info {
+  width: 100%;
+}
+
 .info > h3, p {
   margin-top: 0.5rem;
   font-size: 1.2rem;
+  text-align: start;
 }
 
 /* ? BASED ON YOUR RECENT LISTENING SECTION */
@@ -836,6 +841,10 @@ h1 {
 .fa-heart:hover, .fa-ellipsis:hover {
   color: white;
   transform: scale(1.02);
+}
+
+.song {
+  width: 100%;
 }
 
 .song > .imgcontainer {
@@ -937,6 +946,111 @@ h1 {
   color: white;
   transform: scale(1.03);
   cursor: pointer;
+}
+
+.on-tour {
+  margin-top: 2rem;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 8px;
+  gap: 1.5rem;
+  padding-left: 1rem;
+}
+
+.tour {
+  background-color: #242424;
+  width: 100%;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.tour img {
+  border-radius: 10px;
+}
+
+.tour > div:first-child {
+  padding: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tour > div:first-child > h3:hover {
+  text-decoration: none;
+}
+
+.tour > div:first-child > p:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
+  color: white;
+}
+
+.tour > div:nth-child(2) {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.tour > div:nth-child(2) > div:nth-child(2) {
+  padding: 1rem;
+}
+
+.tour > div:nth-child(2):hover {
+  background-color: #353535;
+  border-radius: 10px;
+}
+
+.tour > div:last-child {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.tour > div:last-child > div:nth-child(2) {
+  padding: 1rem;
+}
+
+.tour > div:last-child:hover {
+  background-color: #353535;
+  border-radius: 10px;
+}
+
+.queue {
+  margin-top: 2rem;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 8px;
+  gap: 1.5rem;
+  padding-left: 1rem;
+}
+
+.next {
+  padding: 1.5rem;
+  background-color: #242424;
+  border-radius: 10px;
+}
+
+.next > div:first-child {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.next > div:nth-child(2) {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: #242424;
+  gap: 1.5rem;
+}
+
+.next > div:nth-child(2):hover {
+  background-color: #353535;
+  border-radius: 10px;
 }
 
 /* --------------------------------------------------------------------- */
