@@ -215,6 +215,8 @@ h2:hover {
   background-color: #a4a4a49c;
 }
 
+/* ------------------------------------------------------------------------ */
+
 /* ? CENTER SECTION */
 
 .center {
@@ -226,6 +228,7 @@ h2:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 1rem 1rem;
 }
 
 .center::-webkit-scrollbar {
@@ -253,43 +256,65 @@ h2:hover {
 
 .icons-center-top > div:first-child {
   display: flex;
-  gap: 0.8rem;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-.icons-center-top > div:first-child span {
+.icons-center-top > div:first-child > span {
   position: relative;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #121212;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #1a1a1a;
+  cursor: pointer;
 }
 
-.icons-center-top > div:first-child span > i {
+.icons-center-top > div:first-child > span > i {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .icons-center-top > div:last-child {
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
   gap: 1.5rem;
 }
 
-.icons-center-top > div:last-child span {
+.icons-center-top > div:last-child > span {
   position: relative;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #121212;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #1a1a1a;
+  cursor: pointer;
 }
 
-.icons-center-top > div:last-child span > i {
-  position: absolute;
+.icons-center-top > div:last-child > span:hover {
+  transform: scale(1.18);
 }
+
+.icons-center-top > div:last-child > span > i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icons-center-top > div:last-child > span:last-of-type img {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
 
 h1 {
   margin: 1rem 1.5rem;
@@ -357,8 +382,6 @@ h1 {
 #sleep > div:nth-child(2) > span:hover {
   transform: scale(1.05);
 }
-
-
 
 #sleep > div:nth-child(2) span > i {
   position: absolute;
@@ -735,6 +758,8 @@ h1 {
   gap: 1.5rem;
 }
 
+/* ----------------------------------------------------------------------- */
+
 /* ? RIGHT SECTION */
 
 .upper-right {
@@ -775,15 +800,42 @@ h1 {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.top span {
+  position: relative;
+  border-radius: 50%;
+  background-color: #2a2a2a00;
+  width: 30px;
+  height: 30px;
+}
+
+.top span:hover {
+  background-color: #2a2a2a;
+}
+
+.top .fa-x {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+  position: absolute;
 }
 
 .upper-right h3:hover {
   text-decoration: underline;
 }
 
+
 .upper-right i {
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+.fa-heart:hover, .fa-ellipsis:hover {
+  color: white;
+  transform: scale(1.02);
 }
 
 .song > .imgcontainer {
@@ -833,6 +885,7 @@ h1 {
   display: flex;
   align-items: center;
   padding-left: 1rem;
+  cursor: pointer;
 }
 
 .about > .imgwrapper {
@@ -885,6 +938,8 @@ h1 {
   transform: scale(1.03);
   cursor: pointer;
 }
+
+/* --------------------------------------------------------------------- */
 
 /* ? FOOTER */
 
@@ -941,11 +996,11 @@ footer .foot-container > div:nth-child(2) > div:first-child {
 }
 
 footer .foot-container > div:nth-child(2) > div:first-child > i:nth-of-type(3) {
-  font-size: 2.8rem;
+  font-size: 3.2rem;
+  color: white;
 }
 
 footer .foot-container > div:nth-child(2) > div:first-child > i:nth-of-type(3):hover {
-  color: white;
   transform: scale(1.1);
   transition: all 0.1s ease-in-out;
 }
