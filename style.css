@@ -33,7 +33,7 @@ h2:hover {
   max-height: 100%;
   display: grid;
   grid-template-rows: 108px 99px auto 10%;
-  grid-template-columns: auto auto auto minmax(150px, 15%);
+  grid-template-columns: auto auto auto minmax(300px, 15%);
   grid-template-areas:"left center center right"
                       "1st center center right"
                       "3rd center center right"
@@ -67,7 +67,7 @@ h2:hover {
   font-weight: bold;
 }
 
-.upper-left > div:first-child p:hover, .upper-left > div:last-child p:hover {
+.upper-left > div:first-child i, .upper-left > div:first-child p {
   color: white;
   transition: all 0.3s ease-in;
   cursor: pointer;
@@ -132,7 +132,8 @@ h2:hover {
   grid-area: 2nd;
   display: flex;
   justify-content: space-between;
-  margin: 1rem 0 1.5rem 1.5rem;
+  align-items: center;
+  margin: 1rem 1rem 1.5rem 1rem;
 }
 
 
@@ -185,10 +186,13 @@ h2:hover {
   color: #1ed760;
 }
 
+.third-bottom-left > .albumc:hover {
+  cursor: pointer;
+}
+
 .third-bottom-left > .albumc:hover:not(.albumc:nth-of-type(7)) {
   background-color: #232323;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
 }
 
 .third-bottom-left .albumc > div img {
@@ -340,6 +344,7 @@ h1 {
 }
 
 #sleep {
+  width: 100%;
   grid-area: sleep;
   display: flex;
   gap: 1.5rem;
@@ -868,6 +873,10 @@ h1 {
   padding-left: 1rem;
 }
 
+.song-info div:first-child h2 {
+  font-size: 1.8rem;
+}
+
 .song-info div:first-child {
   text-align: start;
 }
@@ -1213,6 +1222,75 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
                          "box5 box6";
     gap: 1rem;
   }
+
+  .song-info > div:first-child p, .song-info > div:first-child h2 {
+    font-size: 1.5rem;
+  }
+
+  .song-info > div:nth-child(2) i {
+    font-size: 1.7rem;
+  }
+
+  #sleep > div:nth-child(2) > span {
+    max-width: 30px;
+    max-height: 30px;
+    margin-right: 2rem;
+  }
+
+  #sleep > div:nth-child(2) span > i {
+    font-size: 15px;
+  }
+
+  #chill > div:nth-child(2) > span {
+    width: 30px;
+    height: 30px;
+    margin-right: 2rem;
+  }
+
+  #chill > div:nth-child(2) span > i {
+    font-size: 15px;
+  }
+
+  #rock > div:nth-child(2) > span {
+    width: 30px;
+    height: 30px;
+    margin-right: 2rem;
+  }
+
+  #rock > div:nth-child(2) span > i {
+    font-size: 15px;
+  }
+
+  #pop > div:nth-child(2) > span {
+    width: 30px;
+    height: 30px;
+    margin-right: 2rem;
+  }
+
+  #pop > div:nth-child(2) span > i {
+    font-size: 15px;
+  }
+
+  #hip > div:nth-child(2) > span {
+    width: 30px;
+    height: 30px;
+    margin-right: 2rem;
+  }
+
+  #hip > div:nth-child(2) span > i {
+    font-size: 15px;
+  }
+
+  #jazz > div:nth-child(2) > span {
+    max-width: 30px;
+    max-height: 30px;
+    margin-right: 2rem;
+  }
+
+  #jazz > div:nth-child(2) span > i {
+    font-size: 15px;
+  }
+
 }
 
 
@@ -1223,7 +1301,7 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
   }
 
   h1, h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .grid-evening {
@@ -1233,9 +1311,43 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
                          "pop"
                          "hip"
                          "jazz";
-    width: 80%;
-    gap: 0.5rem;
+    width: 100%;
+    gap: 0.8rem;
     margin: 0 auto;
+  }
+
+  .for-u, .based-on {
+    grid-template-areas: "box1 box2"
+                         "box3 box4"
+                         "box5 box6";
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media (width < 900px) {
+
+  .general-container {
+    margin: 1rem auto;
+  }
+
+  h1, h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .grid-evening {
+    grid-template-areas: "sleep"
+                         "chill"
+                         "rock"
+                         "pop"
+                         "hip"
+                         "jazz";
+    width: 90%;
+    gap: 0.8rem;
   }
 
   .for-u, .based-on {
@@ -1245,11 +1357,96 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
                          "box4"
                          "box5"
                          "box6";
+    width: 80%;
   }
 
-}
+  .upper-left {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
 
-@media (max-width: 900px) {
+  .upper-left > div:first-child, .upper-left > div:last-child {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 
+  .upper-left i {
+    font-size: 2.2rem;
+  }
+
+  .upper-left p {
+    display: none;
+  }
+
+  .library-left p {
+    display: none;
+  }
+
+  .first-bottom-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 0;
+  }
+
+  .first-bottom-left .library-left div {
+    font-size: 2.2rem;
+  }
+
+  .library-left > div:first-of-type > div:last-child {
+    display: none;
+  }
+
+  .library-right {
+    display: none;
+  }
+
+  .library-right i {
+    display: none;
+  }
+
+  .library-down {
+    display: none;
+  }
+
+  .second-bottom-left {
+    display: none;
+  }
+
+  .third-bottom-left > .albumc:nth-of-type(7) {
+    background-color: transparent;
+
+  }
+
+  .third-bottom-left > .albumc:nth-of-type(7) > div:first-of-type {
+    gap: 0;
+  }
+
+  .third-bottom-left > .albumc {
+    gap: 0;
+    padding: 0.5rem;
+  }
+
+  .third-bottom-left > .albumc:hover {
+    background-color: #232323;
+  }
+
+  .albumc:nth-of-type(7) h3, .albumc:nth-of-type(7) p {
+    display: none;
+  }
+
+
+  .albumc:nth-of-type(7) span i {
+    display: none;
+  }
+
+  .albumc > div:nth-child(2) {
+    display: none;
+  }
 }
 
