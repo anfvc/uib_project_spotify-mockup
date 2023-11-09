@@ -33,7 +33,7 @@ h2:hover {
   max-height: 100%;
   display: grid;
   grid-template-rows: 108px 99px auto 10%;
-  grid-template-columns: auto auto auto minmax(250px, 15%);
+  grid-template-columns: auto auto auto minmax(150px, 15%);
   grid-template-areas:"left center center right"
                       "1st center center right"
                       "3rd center center right"
@@ -1193,13 +1193,8 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
   right: 0;
 }
 
-
-
-
-
-
-
-/* MEDIA */
+/* ----------------------------------------------------------------------- */
+/* ?MEDIA */
 
 @media (max-width: 1400px) {
   .grid-evening {
@@ -1207,8 +1202,8 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
     grid-template-areas: "sleep chill"
                          "rock pop"
                          "hip jazz";
-
     margin: 2rem 0.5rem 2rem 0.5rem;
+    gap: 0.8rem;
   }
 
   .for-u, .based-on {
@@ -1238,10 +1233,10 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
                          "pop"
                          "hip"
                          "jazz";
-
-    width: 100%;
+    width: 80%;
+    gap: 0.5rem;
+    margin: 0 auto;
   }
-
 
   .for-u, .based-on {
     grid-template-areas: "box1"
@@ -1251,7 +1246,10 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
                          "box5"
                          "box6";
   }
+
 }
 
-@media (max-width: 900px)
+@media (max-width: 900px) {
+
+}
 
