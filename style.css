@@ -354,11 +354,18 @@ h1 {
   opacity: 1;
 }
 
+#sleep > div:nth-child(2) > span:hover {
+  transform: scale(1.05);
+}
+
+
+
 #sleep > div:nth-child(2) span > i {
   position: absolute;
   color: black;
   font-size: 20px;
 }
+
 
 #chill {
   grid-area: chill;
@@ -404,6 +411,10 @@ h1 {
   position: absolute;
   color: black;
   font-size: 20px;
+}
+
+#chill > div:nth-child(2) > span:hover {
+  transform: scale(1.05);
 }
 
 #rock {
@@ -452,6 +463,10 @@ h1 {
   font-size: 20px;
 }
 
+#rock > div:nth-child(2) > span:hover {
+  transform: scale(1.05);
+}
+
 #pop {
   grid-area: pop;
   display: flex;
@@ -496,6 +511,10 @@ h1 {
   position: absolute;
   color: black;
   font-size: 20px;
+}
+
+#pop > div:nth-child(2) > span:hover {
+  transform: scale(1.05);
 }
 
 #hip {
@@ -544,6 +563,10 @@ h1 {
   font-size: 20px;
 }
 
+#hip > div:nth-child(2) > span:hover {
+  transform: scale(1.05);
+}
+
 #jazz {
   grid-area: jazz;
   display: flex;
@@ -588,6 +611,10 @@ h1 {
   position: absolute;
   color: black;
   font-size: 20px;
+}
+
+#jazz > div:nth-child(2) > span:hover {
+  transform: scale(1.05);
 }
 
 
@@ -671,7 +698,10 @@ h1 {
   opacity: 1;
   box-shadow: 0 0 0 black, -2px 7px 8px rgba(0, 0, 0, 0.338);
   transition: all 0.1s ease-in;
+}
 
+.spotify-box:hover > div:first-child > span:hover {
+  transform: scale(1.05);
 }
 
 .spotify-box > div:first-child > span > i {
@@ -756,7 +786,6 @@ h1 {
   cursor: pointer;
 }
 
-
 .song > .imgcontainer {
   width: 100%;
   display: flex;
@@ -804,7 +833,6 @@ h1 {
   display: flex;
   align-items: center;
   padding-left: 1rem;
-  cursor: pointer;
 }
 
 .about > .imgwrapper {
@@ -812,7 +840,6 @@ h1 {
   background-color: #242424;
   border-radius: 8px 8px 8px 8px;
   position: relative;
-
 }
 
 .about > .imgwrapper > img {
@@ -834,6 +861,29 @@ h1 {
 .imgwrapper > .about-info {
   width: 100%;
   padding: 1.5rem;
+}
+
+.about-info > div:first-of-type {
+  margin: 0 0 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-info > div:first-of-type > button {
+  background-color: transparent;
+  border: 1px solid var(--p-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 15px;
+  font-size: 1.6rem;
+  color: var(--p-color);
+}
+
+.about-info > div:first-of-type > button:hover {
+  border: 1px solid white;
+  color: white;
+  transform: scale(1.03);
+  cursor: pointer;
 }
 
 /* ? FOOTER */
