@@ -1088,6 +1088,10 @@ footer .foot-container > div:first-child {
   align-items: center;
 }
 
+footer .display {
+  display: none;
+}
+
 footer .foot-container > div:first-child > img {
   border-radius: 5px;
 }
@@ -1108,14 +1112,14 @@ footer .foot-container > div:first-child > div:nth-child(3) > i:hover {
 
 /* ? MIDDLE PART OF FOOTER (CONTROLS) */
 
-footer .foot-container > div:nth-child(2) {
+footer .foot-container > div:nth-child(3) {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
 }
 
-footer .foot-container > div:nth-child(2) > div:first-child {
+footer .foot-container > div:nth-child(3) > div:first-child {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1126,12 +1130,12 @@ footer .foot-container > div:nth-child(2) > div:first-child {
   font-size: 2rem;
 }
 
-footer .foot-container > div:nth-child(2) > div:first-child > i:nth-of-type(3) {
+footer .foot-container > div:nth-child(3) > div:first-child > i:nth-of-type(3) {
   font-size: 3.2rem;
   color: white;
 }
 
-footer .foot-container > div:nth-child(2) > div:first-child > i:hover:not(.fa-shuffle) {
+footer .foot-container > div:nth-child(3) > div:first-child > i:hover:not(.fa-shuffle) {
   transform: scale(1.1);
   transition: all 0.1s ease-in-out;
   color: white;
@@ -1148,7 +1152,7 @@ footer .foot-container > div:nth-child(2) > div:first-child > i:hover:not(.fa-sh
 
 /* ! PROGRESS BAR */
 
-footer .foot-container > div:nth-child(2) > div:nth-child(2) {
+footer .foot-container > div:nth-child(3) > div:nth-child(2) {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1157,7 +1161,7 @@ footer .foot-container > div:nth-child(2) > div:nth-child(2) {
   width: 100%;
 }
 
-footer .foot-container > div:nth-child(2) > div:nth-child(2) > span:nth-child(2) {
+footer .foot-container > div:nth-child(3) > div:nth-child(2) > span:nth-child(2) {
   position: relative;
   display: inline-block;
   background-color: var(--bar-color);
@@ -1166,7 +1170,7 @@ footer .foot-container > div:nth-child(2) > div:nth-child(2) > span:nth-child(2)
   height: 4px;
 }
 
-footer .foot-container > div:nth-child(2) > div:nth-child(2) span > .bar1 {
+footer .foot-container > div:nth-child(3) > div:nth-child(2) span > .bar1 {
   position: absolute;
   height: 4px;
   width: 45rem;
@@ -1177,12 +1181,12 @@ footer .foot-container > div:nth-child(2) > div:nth-child(2) span > .bar1 {
   align-items: center;
 }
 
-footer .foot-container > div:nth-child(2) > div:nth-child(2) span:hover > .bar1 {
+footer .foot-container > div:nth-child(3) > div:nth-child(2) span:hover > .bar1 {
   background-color: var(--spotify-green);
   cursor: pointer;
 }
 
-footer .foot-container > div:nth-child(2) > div:nth-child(2) span:hover > .bar1 > .circle1 {
+footer .foot-container > div:nth-child(3) > div:nth-child(2) span:hover > .bar1 > .circle1 {
   position: absolute;
   background-color: white;
   width: 15px;
@@ -1194,7 +1198,7 @@ footer .foot-container > div:nth-child(2) > div:nth-child(2) span:hover > .bar1 
 
 /* ? RIGHT PART OF FOOTER (EXTRA TOOLS) */
 
-footer .foot-container > div:nth-child(3) {
+footer .foot-container > div:nth-child(4) {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1203,7 +1207,7 @@ footer .foot-container > div:nth-child(3) {
   font-size: 1.5rem;
 }
 
-footer .foot-container > div:nth-child(3) > div {
+footer .foot-container > div:nth-child(4) > div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1211,7 +1215,7 @@ footer .foot-container > div:nth-child(3) > div {
   position: relative;
 }
 
-footer .foot-container > div:nth-child(3) > i:not(.fa-play) {
+footer .foot-container > div:nth-child(4) > i:not(.fa-play) {
   color: var(--p-color);
 }
 
@@ -1219,12 +1223,12 @@ footer .foot-container > div:nth-child(3) > i:not(.fa-play) {
   color: #1ed760;
 }
 
-footer .foot-container > div:nth-child(3) > i:hover:not(.fa-play) {
+footer .foot-container > div:nth-child(4) > i:hover:not(.fa-play) {
   color: white;
   cursor: pointer;
 }
 
-footer .foot-container > div:nth-child(3) > div > span {
+footer .foot-container > div:nth-child(4) > div > span {
   position: relative;
   display: inline-block;
   width: 100px;
@@ -1235,7 +1239,7 @@ footer .foot-container > div:nth-child(3) > div > span {
   justify-content: center;
 }
 
-footer .foot-container > div:nth-child(3) > div > span > .bar {
+footer .foot-container > div:nth-child(4) > div > span > .bar {
   position: absolute;
   top: 0;
   left: 0;
@@ -1246,12 +1250,12 @@ footer .foot-container > div:nth-child(3) > div > span > .bar {
   align-items: center;
 }
 
-footer .foot-container > div:nth-child(3) > div > span:hover > .bar {
+footer .foot-container > div:nth-child(4) > div > span:hover > .bar {
   background-color:  var(--spotify-green);
   cursor: pointer;
 }
 
-footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
+footer .foot-container > div:nth-child(4) > div > span:hover > .bar > .circle {
   position: absolute;
   background-color: white;
   width: 15px;
@@ -1353,11 +1357,11 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
 
   /* ! PROGRESS BAR */
 
-  footer .foot-container > div:nth-child(2) > div:nth-child(2) > span:nth-child(2) {
+  footer .foot-container > div:nth-child(3) > div:nth-child(2) > span:nth-child(2) {
     width: 50rem;
   }
 
-  footer .foot-container > div:nth-child(2) > div:nth-child(2) span > .bar1 {
+  footer .foot-container > div:nth-child(3) > div:nth-child(2) span > .bar1 {
     width: 35rem;
   }
 
@@ -1395,11 +1399,11 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
 
   /* ! PROGRESS BAR */
 
-  footer .foot-container > div:nth-child(2) > div:nth-child(2) > span:nth-child(2) {
+  footer .foot-container > div:nth-child(3) > div:nth-child(2) > span:nth-child(2) {
     width: 20rem;
   }
 
-  footer .foot-container > div:nth-child(2) > div:nth-child(2) span > .bar1 {
+  footer .foot-container > div:nth-child(3) > div:nth-child(2) span > .bar1 {
     width: 10rem;
   }
 
@@ -1533,6 +1537,11 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
     max-width: 70%;
   }
 
+  footer .foot-container .display {
+    font-size: 3rem;
+    display: block;
+  }
+
   footer .foot-container > div:nth-child(2) > div:nth-child(2) > span:nth-child(2) {
     width: 10rem;
   }
@@ -1541,7 +1550,7 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
     width: 5rem;
   }
 
-  footer .foot-container > div:nth-child(3) {
+  footer .foot-container > div:nth-child(3), footer .foot-container > div:nth-child(4)  {
     display: none;
   }
 }
@@ -1549,19 +1558,71 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
 @media (max-width: 650px) {
 
   .general-container {
-    grid-template-columns: auto auto auto minmax(250px, 15%);
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:"center"
+                        "right"
+                        "foot";
+  }
+
+  .upper-left, .first-bottom-left, .third-bottom-left {
+    display: none;
   }
 
   .grid-evening {
   margin: 0 auto;
   }
 
+  .upper-right .top {
+    font-size: 1.15rem;
+    padding: 0 0.5rem;
+  }
+
+  .song > .imgcontainer {
+    margin: 0.5rem auto;
+    padding-left: 0.8rem;
+  }
+
+  .song-info {
+    margin: 1rem auto;
+    padding-left: 0.8rem;
+  }
+
   .song-info > div:first-child p, .song-info > div:first-child h2 {
     font-size: 1.3rem;
   }
 
+  .about {
+    padding: 0 1rem;
+  }
+
   .about-info h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .on-tour {
+    margin-top: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .tour {
+    padding: 0 1rem;
+  }
+
+  .tour h3, h4 {
+    font-size: 1.7rem;
+  }
+
+  .tour > div:first-child {
+    padding: 1rem;
+  }
+
+  .tour > div:nth-child(2), .tour > div:nth-child(3) {
+    padding: 1rem;
+  }
+
+  .tour img {
+    width: 100%;
   }
 
   .about-info > div:first-of-type > button {
@@ -1569,10 +1630,44 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
     padding: 0.5rem;
   }
 
-  footer .foot-container{
-    margin: 0 0.5rem;
-    padding: 0;
+  .queue {
+    padding: 0 1rem;
   }
+
+  .next {
+    padding: 1rem;
+  }
+
+  .next h3 {
+    font-size: 1.6rem;
+  }
+
+  .next > div:first-child {
+    padding: 0.5rem;
+  }
+
+  .next > div:nth-child(2) {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  footer {
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+
+  footer .foot-container{
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 
   footer .foot-container > div:nth-child(2) > div:first-child,   footer .foot-container > div:nth-child(2) > div:nth-child(2) {
     display: none;
