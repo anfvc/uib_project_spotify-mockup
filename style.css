@@ -1449,5 +1449,9 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
   .albumc > div:nth-child(2) {
     display: none;
   }
+
+  .spotify-box {
+    max-width: 70%;
+  }
 }
 
