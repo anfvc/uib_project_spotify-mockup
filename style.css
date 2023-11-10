@@ -1409,7 +1409,7 @@ footer .foot-container > div:nth-child(4) > div > span:hover > .bar > .circle {
 
 }
 
-@media (width < 900px) {
+@media (width < 850px) {
 
   .general-container {
     margin: 1rem auto;
@@ -1417,10 +1417,6 @@ footer .foot-container > div:nth-child(4) > div > span:hover > .bar > .circle {
 
   h1, h2 {
     font-size: 1.2rem;
-  }
-
-  p {
-    font-size: 1rem;
   }
 
   .grid-evening {
@@ -1537,9 +1533,18 @@ footer .foot-container > div:nth-child(4) > div > span:hover > .bar > .circle {
     max-width: 70%;
   }
 
+  footer .foot-container {
+    padding: 2.5rem;
+  }
+
   footer .foot-container .display {
-    font-size: 3rem;
-    display: block;
+    font-size: 2.5rem;
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  footer p {
+    font-size: 1.5rem;
   }
 
   footer .foot-container > div:nth-child(2) > div:nth-child(2) > span:nth-child(2) {
@@ -1660,6 +1665,12 @@ footer .foot-container > div:nth-child(4) > div > span:hover > .bar > .circle {
     width: 100%;
     position: fixed;
     bottom: 0;
+  }
+
+  footer .foot-container .display {
+    font-size: 2.5rem;
+    display: flex;
+    gap: 2.5rem;
   }
 
   footer .foot-container{
