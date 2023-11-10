@@ -1543,6 +1543,10 @@ footer .foot-container > div:nth-child(4) > div > span:hover > .bar > .circle {
     gap: 2.5rem;
   }
 
+  footer .foot-container .display > i:first-child {
+    color: var(--spotify-green);
+  }
+
   footer p {
     font-size: 1.5rem;
   }
@@ -1574,8 +1578,72 @@ footer .foot-container > div:nth-child(4) > div > span:hover > .bar > .circle {
     display: none;
   }
 
+  h1 {
+    font-size: 2rem;
+  }
+
   .grid-evening {
   margin: 0 auto;
+  }
+
+  #sleep > div:nth-child(2) > span {
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 2rem;
+  }
+
+  #sleep > div:nth-child(2) span > i {
+    font-size: 20px;
+  }
+
+  #chill > div:nth-child(2) > span {
+    width: 50px;
+    height: 50px;
+    margin-right: 2rem;
+  }
+
+  #chill > div:nth-child(2) span > i {
+    font-size: 20px;
+  }
+
+  #rock > div:nth-child(2) > span {
+    width: 50px;
+    height: 50px;
+    margin-right: 2rem;
+  }
+
+  #rock > div:nth-child(2) span > i {
+    font-size: 20px;
+  }
+
+  #pop > div:nth-child(2) > span {
+    width: 50px;
+    height: 50px;
+    margin-right: 2rem;
+  }
+
+  #pop > div:nth-child(2) span > i {
+    font-size: 20px;
+  }
+
+  #hip > div:nth-child(2) > span {
+    width: 50px;
+    height: 50px;
+    margin-right: 2rem;
+  }
+
+  #hip > div:nth-child(2) span > i {
+    font-size: 20px;
+  }
+
+  #jazz > div:nth-child(2) > span {
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 2rem;
+  }
+
+  #jazz > div:nth-child(2) span > i {
+    font-size: 20px;
   }
 
   .upper-right .top {
@@ -1585,7 +1653,7 @@ footer .foot-container > div:nth-child(4) > div > span:hover > .bar > .circle {
 
   .song > .imgcontainer {
     margin: 0.5rem auto;
-    padding-left: 0.8rem;
+    padding: 1rem;
   }
 
   .song-info {
@@ -1623,7 +1691,7 @@ footer .foot-container > div:nth-child(4) > div > span:hover > .bar > .circle {
   }
 
   .tour > div:nth-child(2), .tour > div:nth-child(3) {
-    padding: 1rem;
+    padding: 1.5rem;
   }
 
   .tour img {
@@ -1637,10 +1705,12 @@ footer .foot-container > div:nth-child(4) > div > span:hover > .bar > .circle {
 
   .queue {
     padding: 0 1rem;
+    margin-top: 1.5rem;
   }
 
   .next {
     padding: 1rem;
+    margin-bottom: 11.5rem;
   }
 
   .next h3 {
