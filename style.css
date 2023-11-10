@@ -1397,6 +1397,11 @@ footer .foot-container > div:nth-child(4) > div > span:hover > .bar > .circle {
     width: 95%;
   }
 
+  .about-info > div:first-of-type > button {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+  }
+
   /* ! PROGRESS BAR */
 
   footer .foot-container > div:nth-child(3) > div:nth-child(2) > span:nth-child(2) {
@@ -1665,6 +1670,11 @@ footer .foot-container > div:nth-child(4) > div > span:hover > .bar > .circle {
     font-size: 1.3rem;
   }
 
+
+  .about-info > div:first-of-type > button {
+    font-size: 1.6rem;
+  }
+
   .about {
     padding: 0 1rem;
   }
@@ -1696,11 +1706,6 @@ footer .foot-container > div:nth-child(4) > div > span:hover > .bar > .circle {
 
   .tour img {
     width: 100%;
-  }
-
-  .about-info > div:first-of-type > button {
-    font-size: 1.2rem;
-    padding: 0.5rem;
   }
 
   .queue {
