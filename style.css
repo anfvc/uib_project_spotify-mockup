@@ -1206,6 +1206,7 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
 /* ?MEDIA */
 
 @media (max-width: 1400px) {
+
   .grid-evening {
     width: 100%;
     grid-template-areas: "sleep chill"
@@ -1221,6 +1222,7 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
                          "box3 box4"
                          "box5 box6";
     gap: 1rem;
+    margin: 0 auto;
   }
 
   .song-info > div:first-child p, .song-info > div:first-child h2 {
@@ -1294,7 +1296,7 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
 
   .general-container > *:not(footer) {
     padding: 1rem 0rem;
@@ -1321,7 +1323,6 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
                          "box3 box4"
                          "box5 box6";
     width: 95%;
-    margin: 0 auto;
   }
 }
 
@@ -1346,7 +1347,7 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
                          "pop"
                          "hip"
                          "jazz";
-    width: 90%;
+    width: 100%;
     gap: 0.8rem;
   }
 
