@@ -1574,8 +1574,9 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
     padding: 0;
   }
 
-  footer .foot-container > div:nth-child(2) > div:first-child {
+  footer .foot-container > div:nth-child(2) > div:first-child,   footer .foot-container > div:nth-child(2) > div:nth-child(2) {
     display: none;
   }
+
 }
 
