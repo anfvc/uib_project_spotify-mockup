@@ -8,6 +8,7 @@
   font-size: 62.5%;
   --p-color: rgb(178, 178, 178);
   --spotify-green: #1ed760;
+  --bar-color: rgba(103, 103, 103, 0.849);
 }
 
 body {
@@ -1069,7 +1070,6 @@ h1 {
 footer {
   grid-area: foot;
   background-color: #000;
-  border: 1px solid white;
 }
 
 footer .foot-container {
@@ -1092,9 +1092,17 @@ footer .foot-container > div:first-child > img {
   border-radius: 5px;
 }
 
+footer .foot-container > div:first-child > div:first-of-type > h4 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+footer .foot-container > div:first-child > div:nth-child(3) > i {
+  font-size: 1.9rem;
+}
+
 footer .foot-container > div:first-child > div:nth-child(3) > i:hover {
   color: white;
-  text-shadow: 0 0 2px white;
   transform: scale(1.1);
 }
 
@@ -1123,13 +1131,64 @@ footer .foot-container > div:nth-child(2) > div:first-child > i:nth-of-type(3) {
   color: white;
 }
 
-footer .foot-container > div:nth-child(2) > div:first-child > i:nth-of-type(3):hover {
+footer .foot-container > div:nth-child(2) > div:first-child > i:hover:not(.fa-shuffle) {
   transform: scale(1.1);
   transition: all 0.1s ease-in-out;
+  color: white;
 }
 
 .fa-shuffle {
   color: #1ed760;
+}
+
+.fa-shuffle:hover {
+  color: #13f161;
+  transform: scale(1.1);
+}
+
+/* ! PROGRESS BAR */
+
+footer .foot-container > div:nth-child(2) > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.4rem;
+  width: 100%;
+}
+
+footer .foot-container > div:nth-child(2) > div:nth-child(2) > span:nth-child(2) {
+  position: relative;
+  display: inline-block;
+  background-color: var(--bar-color);
+  border-radius: 10px;
+  width: 60rem;
+  height: 4px;
+}
+
+footer .foot-container > div:nth-child(2) > div:nth-child(2) span > .bar1 {
+  position: absolute;
+  height: 4px;
+  width: 45rem;
+  top: 0;
+  left: 0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+footer .foot-container > div:nth-child(2) > div:nth-child(2) span:hover > .bar1 {
+  background-color: var(--spotify-green);
+  cursor: pointer;
+}
+
+footer .foot-container > div:nth-child(2) > div:nth-child(2) span:hover > .bar1 > .circle1 {
+  position: absolute;
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  right: 0;
 }
 
 
@@ -1170,11 +1229,10 @@ footer .foot-container > div:nth-child(3) > div > span {
   display: inline-block;
   width: 100px;
   height: 4px;
-  background-color: rgba(103, 103, 103, 0.849);
+  background-color: var(--bar-color);
   border-radius: 10px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 footer .foot-container > div:nth-child(3) > div > span > .bar {
@@ -1189,15 +1247,15 @@ footer .foot-container > div:nth-child(3) > div > span > .bar {
 }
 
 footer .foot-container > div:nth-child(3) > div > span:hover > .bar {
-  background-color: #1ed760;
+  background-color:  var(--spotify-green);
   cursor: pointer;
 }
 
 footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
   position: absolute;
   background-color: white;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   right: 0;
 }
@@ -1293,6 +1351,16 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
     font-size: 15px;
   }
 
+  /* ! PROGRESS BAR */
+
+  footer .foot-container > div:nth-child(2) > div:nth-child(2) > span:nth-child(2) {
+    width: 50rem;
+  }
+
+  footer .foot-container > div:nth-child(2) > div:nth-child(2) span > .bar1 {
+    width: 35rem;
+  }
+
 }
 
 
@@ -1324,6 +1392,17 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
                          "box5 box6";
     width: 95%;
   }
+
+  /* ! PROGRESS BAR */
+
+  footer .foot-container > div:nth-child(2) > div:nth-child(2) > span:nth-child(2) {
+    width: 20rem;
+  }
+
+  footer .foot-container > div:nth-child(2) > div:nth-child(2) span > .bar1 {
+    width: 10rem;
+  }
+
 }
 
 @media (width < 900px) {
@@ -1452,6 +1531,51 @@ footer .foot-container > div:nth-child(3) > div > span:hover > .bar > .circle {
 
   .spotify-box {
     max-width: 70%;
+  }
+
+  footer .foot-container > div:nth-child(2) > div:nth-child(2) > span:nth-child(2) {
+    width: 10rem;
+  }
+
+  footer .foot-container > div:nth-child(2) > div:nth-child(2) span > .bar1 {
+    width: 5rem;
+  }
+
+  footer .foot-container > div:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .general-container {
+    grid-template-columns: auto auto auto minmax(250px, 15%);
+  }
+
+  .grid-evening {
+  margin: 0 auto;
+  }
+
+  .song-info > div:first-child p, .song-info > div:first-child h2 {
+    font-size: 1.3rem;
+  }
+
+  .about-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-info > div:first-of-type > button {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+
+  footer .foot-container{
+    margin: 0 0.5rem;
+    padding: 0;
+  }
+
+  footer .foot-container > div:nth-child(2) > div:first-child {
+    display: none;
   }
 }
 
