@@ -1548,7 +1548,7 @@ footer #bottom-container {
   }
 
   footer .foot-container {
-    padding: 2.5rem;
+    padding: 0 2rem 0 0.5rem;
   }
 
   footer .foot-container .display {
