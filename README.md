@@ -16,6 +16,16 @@ Now you might see an ordinary spotify desktop version, but what I was looking at
 
 ## The process:
 
+##### Fun Fact
+
+- I tried creating a design on Figma but that failed terribly...
+
+![Figma scren](./Assets/failed.png)
+
+.... So I continued by looking at spotify only...
+
+
+
 ### First column:
 - Built with flex, grid, icons and a bunch of images.
 
