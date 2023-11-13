@@ -31,7 +31,9 @@ Now you might see an ordinary spotify desktop version, but what I was looking at
 
 ![Alt text](<Assets/Images/Screenshot from 2023-11-10 20-37-29.png>)
 
-- Me when I couldn't resize the images properly: <iframe src="https://giphy.com/embed/vy42fjZIQdoas" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/michael-scott-vy42fjZIQdoas">via GIPHY</a></p>
+- Me when I couldn't resize the images properly:
+
+ <iframe src="https://giphy.com/embed/vy42fjZIQdoas" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/michael-scott-vy42fjZIQdoas">via GIPHY</a></p>
 
 ### 3rd and Final Column:
 
