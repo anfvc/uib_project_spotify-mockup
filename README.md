@@ -12,7 +12,7 @@ Now you might see an ordinary spotify desktop version, but what I was looking at
 
 - Skills tested:  `grid`, `flexbox` and `positioning.`
 - I managed to make approx. 4 breakpoints to achieve `responsivity.`
-- Breakpoints implemented: `<1400px, <1200px, <850px, & <650px (Mobile version).`
+   - Breakpoints implemented: `<1400px, <1200px, <850px, & <650px (Mobile version).`
 
 ## The process:
 
@@ -51,9 +51,17 @@ Now you might see an ordinary spotify desktop version, but what I was looking at
 
 ![Mobile version project](./Assets/Images/IMG_4551.png)
 
+-----------------------------------------------------------------------------------------
+
+#### Vocabulary:
+
+- `Grid`: It's a bi-dimensional styling property that allows you to arrange your site in columns and rows.
+- `Flex`: It's a one-dimensional way of arranging items in rows or columns.
+
 #### Lessons learned:
 
 - Research more effectively about timelines for such big projects.
 - Based on such a long code, look for ways to write more effective and clean code.
+- Getting the Spotify official typography is complicated.
 
 
