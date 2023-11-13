@@ -55,13 +55,13 @@ Now you might see an ordinary spotify desktop version, but what I was looking at
 
 #### Vocabulary:
 
-- `Grid`: It's a bi-dimensional styling property that allows you to arrange your site in columns and rows.
 - `Flex`: It's a one-dimensional way of arranging items in rows or columns.
+- `Grid`: It's a bi-dimensional styling property that allows you to arrange your site in columns and rows.
 
 #### Lessons learned:
 
 - Research more effectively about timelines for such big projects.
-- Based on such a long code, look for ways to write more effective and clean code.
+- Based on such a long code, look for ways to write more concise code in the future.
 - Getting the Spotify official typography is complicated.
 
 
