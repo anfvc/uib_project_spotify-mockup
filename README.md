@@ -37,7 +37,7 @@ Now you might see an ordinary spotify desktop version, but what I was looking at
 
 - Based on `flexbox`, it was brought to life.
 
-![Alt text](<Assets/Images/Screenshot from 2023-11-10 20-37-42.png>)
+![photo of the last column](<Assets/Images/Screenshot from 2023-11-10 20-37-42.png>)
 
 ### The regret...
 
@@ -46,5 +46,12 @@ Now you might see an ordinary spotify desktop version, but what I was looking at
 <iframe src="https://giphy.com/embed/9oF7EAvaFUOEU" width="480" height="271" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/the-office-smile-9oF7EAvaFUOEU">via GIPHY</a></p>
 
 - In the end the timing was enough and I achieved it:
+
+![Mobile version project](./Assets/Images/IMG_4551.png)
+
+#### Lessons learned:
+
+- Research more effectively about timelines for such big projects.
+- Based on such a long code, look for ways to write more effective and clean code.
 
 
