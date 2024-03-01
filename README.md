@@ -58,6 +58,7 @@ Now you might see an ordinary spotify desktop version, but what I was looking at
 <iframe src="https://giphy.com/embed/9oF7EAvaFUOEU" width="480" height="271" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/the-office-smile-9oF7EAvaFUOEU">via GIPHY</a></p>
 
 - In the end the timing was enough and I achieved it:
+https://anfvc.github.io/uib_project_spotify-mockup/
 
 ![Mobile version project](./Assets/Images/IMG_4551.png)
 
